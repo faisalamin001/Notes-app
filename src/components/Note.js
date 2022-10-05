@@ -16,7 +16,7 @@ const Note = ({ note, handleDeleteNote, handleEditNote }) => {
     ''
   ) : (
     <div className='flex items-center justify-between p-4 note-footer'>
-      <small className='text-gray-900'>{note.date}</small>
+      <small className='text-gray-900'>{note.date} {note.time}</small>
       <div className='flex space-x-2'>
         <MdEdit
           className='edit-icon text-gray-900

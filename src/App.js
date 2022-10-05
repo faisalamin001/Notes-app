@@ -29,6 +29,7 @@ const App = () => {
       title: name.title,
       text: name.text,
       date: date.toLocaleDateString(),
+      time:  date.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit', hour12: true}),
       tags: name.tags,
     };
     const newNotes = [...notes, newNote];
